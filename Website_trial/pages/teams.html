@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team | Sara Hashemi Nasab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #222;
+    }
+
+    header {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 20px 60px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      color: #a93ff5;
+      font-size: 1.8em;
+      letter-spacing: 1px;
+    }
+
+    .team-section {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-size: 2.2em;
+      color: #a93ff5;
+      margin-bottom: 10px;
+    }
+
+    .team-section p {
+      max-width: 600px;
+      margin: 0 auto 60px;
+      color: #555;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      justify-items: center;
+    }
+
+    .team-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      padding: 25px 20px;
+      width: 100%;
+      max-width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .team-card img {
+      width: 100%;
+      border-radius: 50%;
+      height: 220px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .team-card h3 {
+      font-size: 1.2em;
+      color: #222;
+      margin-bottom: 6px;
+    }
+
+    .team-card h4 {
+      font-size: 0.95em;
+      color: #a93ff5;
+      margin-bottom: 12px;
+    }
+
+    .team-card p {
+      font-size: 0.9em;
+      color: #555;
+      line-height: 1.5em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 10%;
+      background: #f9f9f9;
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 20px 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+     <div id="navbar-container"></div>
+  <header>
+    <h1>Sara Hashemi Nasab | Our Team</h1>
+  </header>
+
+  <section class="team-section">
+    <h2>Meet Our Team</h2>
+    <p>These are the amazing individuals who have contributed their creativity, expertise, and dedication to bring our vision to life.</p>
+
+    <div class="team-container">
+      <!-- Team Member 1 -->
+      <div class="team-card">
+        <img src="/images/Sara's Professional photo .jpg" alt="Team Member">
+        <h3>Sara Hashemi Nasab</h3>
+        <h4>Founder & Creative Director</h4>
+        <p>Leads the overall creative direction and ensures each project aligns with the brand’s vision and mission.</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="team-card">
+        <img src="/images/profile.jpg" alt="Team Member">
+        <h3>Riddhi</h3>
+        <h4>Frontend Developer</h4>
+        <p>Responsible for building beautiful, responsive web pages that match the design and user experience goals.</p>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="team-card">
+        <img src="/images/team3.jpg" alt="Team Member">
+        <h3>Parth Yadav</h3>
+        <h4>Backend Developer</h4>
+        <p>Ensures everything runs smoothly behind the scenes, from data management to server-side integrations.</p>
+      </div>
+
+      <!-- Team Member 4 -->
+      <div class="team-card">
+        <img src="/images/team4.avif" alt="Team Member">
+        <h3>Sanya Master</h3>
+        <h4>Coordinator</h4>
+        <p>Connects all team members, manages schedules, and maintains communication between departments.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Sara Hashemi Nasab. All rights reserved.
+  </footer>
+</body>
+</html>
