@@ -108,6 +108,17 @@ body {
   color: #444;
 }
 
+/* Link Styles for Businesses */
+.wild-skin-care {
+  color: red;
+  text-decoration: underline;
+}
+
+.wild-ei-leadership {
+  color: blue;
+  text-decoration: underline;
+}
+
 .about-image {
   flex: 1;
   min-width: 300px;
@@ -118,102 +129,6 @@ body {
   width: 90%;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-/* Values Section */
-.values-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 4rem auto;
-  max-width: 1000px;
-  padding: 0 2rem;
-}
-
-.value-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  padding: 2rem 1.5rem;
-  text-align: center;
-  flex: 1 1 260px;
-  transition: transform 0.3s;
-}
-
-.value-card:hover {
-  transform: translateY(-5px);
-}
-
-.value-card i {
-  font-size: 1.8rem;
-  color: #8a2be2;
-  margin-bottom: 0.8rem;
-}
-
-.value-card h4 {
-  color: #6a0dad;
-  margin-bottom: 0.6rem;
-}
-
-.value-card p {
-  color: #555;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-/* Vision Section */
-.vision-section {
-  background: #f5f0ff;
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-
-.vision-section h4 {
-  color: #6a0dad;
-  margin-bottom: 1rem;
-}
-
-.vision-section p {
-  max-width: 800px;
-  margin: auto;
-  color: #444;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-}
-
-.vision-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.btn-primary {
-  background: #8a2be2;
-  color: #fff;
-  padding: 0.8rem 1.6rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  background: #6a0dad;
-}
-
-.btn-outline {
-  border: 1px solid #6a0dad;
-  color: #6a0dad;
-  padding: 0.8rem 1.6rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-outline:hover {
-  background: #6a0dad;
-  color: #fff;
 }
 
 /* Footer */
