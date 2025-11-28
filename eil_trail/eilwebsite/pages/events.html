@@ -3,151 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Events | WILD – Emotional Intelligence in Leadership</title>
+  <title>Events & Programs | Wild</title>
 
-  <link rel="stylesheet" href="/eil_trail//eilwebsite/css/events.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2e0e6ad46.js" crossorigin="anonymous"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/eil_trail/eilwebsite/css/events.css" />
 </head>
 
 <body>
-
-  <!-- Navbar -->
-  <!-- Navigation Bar -->
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="logo">
-      <div class="logo-circle" style="background-image: url(/eilwebsite/images/logo.png);"></div>
+      <div class="logo-circle" style="background-image: url('/eil_trail/eilwebsite/images/logo.png')"></div>
       <span>Emotional Intelligence</span>
     </div>
 
-    <nav class="nav-links" id="nav-links">
+    <nav class="nav-links">
       <a href="index.html">Home</a>
-       <a href="about.html">About</a>
+      <a href="about.html">About</a>
+
+      <div class="dropdown">
+        <a href="#">Programs & Services <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Leadership Coaching</a></li>
+          <li><a href="#">Organizational Training</a></li>
+          <li><a href="#">EI Assessments</a></li>
+          <li><a href="#">Consulting</a></li>
+          <li><a href="#">Book an Appointment</a></li>
+        </ul>
+      </div>
+
       <div class="dropdown">
         <a href="events.html">Events <i class="fa-solid fa-chevron-down"></i></a>
         <ul class="dropdown-menu">
+          <li><a href="#">Upcoming Events</a></li>
           <li><a href="#">Workshops</a></li>
           <li><a href="#">Seminars</a></li>
           <li><a href="#">Leadership Talks</a></li>
         </ul>
       </div>
+
       <div class="dropdown">
-        <a href="multimedia.html">Educational Multi-Media <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#">Research & Media <i class="fa-solid fa-chevron-down"></i></a>
         <ul class="dropdown-menu">
+          <li><a href="#">Research Papers</a></li>
+          <li><a href="#">Articles</a></li>
           <li><a href="#">Videos</a></li>
           <li><a href="#">Podcasts</a></li>
-          <li><a href="#">Articles</a></li>
+          <li><a href="#">Case Studies</a></li>
         </ul>
       </div>
+
       <a href="subscription.html">Subscription</a>
       <a href="#">Social Media</a>
     </nav>
-
-    <div class="hamburger" id="hamburger">
-      <i class="fa-solid fa-bars"></i>
-    </div>
   </header>
 
-
-  <!-- Hero Section -->
+  <!-- ===== HERO SECTION ===== -->
   <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Our Events & Programs</h1>
-      <p>Grow your leadership capability through evidence-based emotional intelligence learning experiences.</p>
-      <a href="#workshops" class="hero-btn">Explore Events</a>
+      <h1>Events & Programs</h1>
+      <p>Explore past activities and request customized programs tailored for your organization.</p>
     </div>
   </section>
 
-  <!-- Filter Section -->
-  <section class="filter-bar">
-    <div class="filter-buttons">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="workshop">Workshops</button>
-      <button class="filter-btn" data-filter="seminar">Seminars</button>
-      <button class="filter-btn" data-filter="talk">Leadership Talks</button>
+   <!-- ===== UPCOMING EVENTS ===== -->
+  <section class="section-block" id="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <div class="past-events-grid">
+      <div class="past-event-card">
+        <h3>Mindful Leadership Workshop</h3>
+           <p style="font-size:1.15rem; line-height:1.8; color:#444;"><strong>Dec 07, 2025 </strong></p>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">Join us on  for a session on enhancing mindfulness in leadership.</p>
+      </div>
+      <div class="past-event-card">
+        <h3>Corporate Emotional Intelligence Seminar</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;"><strong>Jan 15, 2025</strong></p>
+          <p style="font-size:1.15rem; line-height:1.8; color:#444;">Learn strategies to improve team communication and engagement.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Events Grid -->
-  <section class="events-container" id="workshops">
-
-    <!-- Event Card 1 -->
-    <div class="event-card workshop">
-      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80" alt="Workshop" />
-      <div class="event-details">
-        <h3>Building Emotional Resilience</h3>
-        <p class="date"><i class="fa-solid fa-calendar-days"></i> March 12, 2025</p>
-        <p class="location"><i class="fa-solid fa-location-dot"></i> Toronto, WILD Center</p>
-        <p class="desc">Strengthen your self-awareness, emotional regulation, and leadership presence through hands-on practice.</p>
-
-        <div class="actions">
-          <a href="#" class="btn-details">View Details</a>
-          <a href="#" class="btn-book">Book Now</a>
-        </div>
+  <!-- ===== WORKSHOPS ===== -->
+  <section class="section-block" id="workshops">
+    <h2>Workshops</h2>
+    <div class="past-events-grid">
+      <div class="past-event-card">
+        <h3>Stress Management Workshop</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">A hands-on session for employees to learn stress-reduction techniques.</p>
+      </div>
+      <div class="past-event-card">
+        <h3>Leadership Skills Workshop</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">Interactive exercises to improve decision-making, empathy, and team motivation.</p>
       </div>
     </div>
-
-    <!-- Event Card 2 -->
-    <div class="event-card seminar">
-      <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80" alt="Seminar" />
-      <div class="event-details">
-        <h3>Emotional Intelligence in Modern Leadership</h3>
-        <p class="date"><i class="fa-solid fa-calendar-days"></i> May 8, 2025</p>
-        <p class="location"><i class="fa-solid fa-location-dot"></i> University of Waterloo</p>
-        <p class="desc">A research-driven seminar exploring how EI improves decision-making, collaboration, and organizational culture.</p>
-
-        <div class="actions">
-          <a href="#" class="btn-details">View Details</a>
-          <a href="#" class="btn-book">Register</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Event Card 3 -->
-    <div class="event-card talk">
-      <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1000&q=80" alt="Leadership Talk" />
-      <div class="event-details">
-        <h3>Leading with Emotional Intelligence</h3>
-        <p class="date"><i class="fa-solid fa-calendar-days"></i> July 10, 2025</p>
-        <p class="location"><i class="fa-solid fa-location-dot"></i> Online (Virtual)</p>
-        <p class="desc">A live keynote exploring empathy-based leadership, delivered by Dr. Sara Hashemi Nasab.</p>
-
-        <div class="actions">
-          <a href="#" class="btn-details">More Info</a>
-          <a href="#" class="btn-book">Join Talk</a>
-        </div>
-      </div>
-    </div>
-
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 WILD – Emotional Intelligence in Leadership. All Rights Reserved.</p>
+  <!-- ===== SEMINARS ===== -->
+  <section class="section-block" id="seminars">
+    <h2>Seminars</h2>
+    <div class="past-events-grid">
+      <div class="past-event-card">
+        <h3>Corporate Wellness Seminar</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">Focused on creating healthier workplace culture through emotional intelligence.</p>
+      </div>
+      <div class="past-event-card">
+        <h3>Innovation & EI Seminar</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">Explore the connection between innovation, creativity, and emotional awareness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEADERSHIP TALKS ===== -->
+  <section class="section-block" id="leadership-talks">
+    <h2>Leadership Talks</h2>
+    <div class="past-events-grid">
+      <div class="past-event-card">
+        <h3>Leading with Empathy</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">Guest speaker session on building empathy-driven leadership skills.</p>
+      </div>
+      <div class="past-event-card">
+        <h3>Executive Emotional Intelligence</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">Insights from industry leaders on applying EI in top management roles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PAST EVENTS ===== -->
+  <section class="section-block">
+    <h2>Past Events (Archive)</h2>
+    <div class="past-events-grid">
+      <div class="past-event-card">
+        <h3>Holistic Healing Retreat</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">A 2-day retreat centered on mindfulness, stretching, and guided relaxation activities.</p>
+      </div>
+      <div class="past-event-card">
+        <h3>Leadership Energy Workshop</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">Interactive session designed for executives to improve clarity, productivity, and emotional strength.</p>
+      </div>
+      <div class="past-event-card">
+        <h3>Emotional Intelligence Bootcamp</h3>
+        <p style="font-size:1.15rem; line-height:1.8; color:#444;">A transformative session helping individuals improve communication and self-awareness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CUSTOM EVENT REQUEST FORM ===== -->
+  <section class="section-block">
+    <h2>Request a Customized Event</h2>
+    <div class="custom-form-wrapper">
+      <form>
+        <label for="name">Your Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="event-type">Event Type</label>
+        <input type="text" id="event-type" placeholder="Corporate, Private, School, etc." required>
+
+        <label for="details">Details About Your Request</label>
+        <textarea id="details" rows="5" placeholder="Describe the event you want us to organize..." required></textarea>
+
+        <button class="primary-btn" type="submit">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 Wild. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
   </footer>
-
-  <!-- Filter Script -->
-  <script>
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.event-card');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-
-        cards.forEach(card => {
-          card.style.display =
-            filter === 'all' || card.classList.contains(filter)
-              ? 'block'
-              : 'none';
-        });
-      });
-    });
-  </script>
-
 </body>
 </html>

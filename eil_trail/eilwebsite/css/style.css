@@ -39,14 +39,16 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   font-size: 1.2rem; /* Larger font size */
+
+
 }
 
 .nav-links a {
   color: #333;
   text-decoration: none;
-  font-weight: 500;
+
   transition: color 0.3s;
 }
 .nav-links a:hover {
@@ -58,7 +60,7 @@
   background: #004aad;
   color: white !important;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 /* Dropdown */
