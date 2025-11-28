@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Multimedia | WILD – Emotional Intelligence</title>
+  <link rel="stylesheet" href="/eilwebsite/css/multimedia.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6ad46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-circle" style="background-image: url(/eilwebsite/images/logo.png);"></div>
+      <span>Emotional Intelligence</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+
+        <li class="dropdown">
+          <a href="events.html">Events</a>
+        </li>
+
+        <li class="dropdown">
+          <a href="multimedia.html" class="active">Educational Multimedia</a>
+        </li>
+
+        <li><a href="subscription.html">Subscription</a></li>
+        <li><a href="#">Social Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Educational Multimedia</h1>
+      <p>Explore videos, podcasts, and articles to enhance your leadership with emotional intelligence.</p>
+    </div>
+  </section>
+<!-- Videos Section -->
+<section class="content-section">
+  <h2>Videos</h2>
+  <div class="content-grid">
+
+    <!-- Video 1 -->
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/dlM4jqZXdnY" allowfullscreen></iframe>
+   
+      </div>
+      <h3>Emotional Intelligence Basics</h3>
+    </div>
+
+    <!-- Video 2 -->
+    <!-- Premium Locked Video -->
+<div class="video-card premium-locked">
+  <div class="video-wrapper locked">
+    <img src="/eilwebsite/images/video-thumbnail-1.jpg" class="thumbnail" alt="Video Thumbnail">
+
+    <div class="lock-overlay">
+      <i class="fa-solid fa-lock"></i>
+      <p>Premium Content</p>
+      <button class="btn-subscribe" onclick="openPremiumModal()">Get Premium Access</button>
+    </div>
+  </div>
+  <h3> <a href="https://www.youtube.com/@WildNaturalProductsAndEvents" target="_blank">Leadership & EI</a></h3>
+</div>
+
+    <!-- Video 3 -->
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/2n7y9nZzXGk" allowfullscreen></iframe>
+        <div class="overlay">
+          <a href="https://www.youtube.com/@WildNaturalProductsAndEvents" target="_blank" class="btn-overlay">
+            <i class="fa-brands fa-youtube"></i> Watch on YouTube
+          </a>
+        </div>
+      </div>
+      <h3>Managing Emotions in Teams</h3>
+      <a href="subscription.html" class="link-subscribe">Get Premium Access</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Podcasts Section -->
+  <section class="content-section">
+    <div class="card video-cardp">
+        <iframe src="https://www.youtube.com/embed/2n7y9nZzXGk" allowfullscreen></iframe>
+      <h2>Podcasts <span class="coming-soon">(Coming Soon)</span></h2>
+      
+    <p class="coming-text">We are preparing engaging podcasts to help you grow your leadership with emotional intelligence. Stay tuned!</p>
+  </div>
+  </section>
+
+  <!-- Articles Section -->
+  <section class="content-section">
+    <h2>Publications</h2>
+    <div class="content-grid">
+      <div class="card">
+        <h3>5 Ways to Boost Emotional Intelligence</h3>
+        <p>Learn actionable strategies to strengthen your EI and lead effectively.</p>
+        <a href="#" class="btn-details">Read More</a>
+      </div>
+
+      <div class="card">
+        <h3>Empathy in Leadership</h3>
+        <p>Understanding and practicing empathy can transform your team's performance.</p>
+        <a href="#" class="btn-details">Read More</a>
+      </div>
+
+      <div class="card">
+        <h3>Self-Awareness Techniques</h3>
+        <p>Discover methods to increase self-awareness for better decision-making.</p>
+        <a href="#" class="btn-details">Read More</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Premium Modal -->
+<div id="premiumModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="close-btn" onclick="closePremiumModal()">&times;</span>
+
+    <h2 class="modal-title">Premium Access Required</h2>
+    <p class="modal-subtitle">Unlock this exclusive video and all premium content.</p>
+
+    <div class="modal-plan-card">
+      <h3>Premium Plan</h3>
+      <p class="price">$19.99 / month</p>
+      <ul>
+        <li>✔ Unlimited Premium Videos</li>
+        <li>✔ Exclusive Articles</li>
+        <li>✔ Leadership Masterclasses</li>
+        <li>✔ Priority Support</li>
+      </ul>
+    </div>
+
+    <a class="modal-payment-btn" href="subscription.html">View Plans</a>
+  </div>
+</div>
+
+
+<script>
+function openPremiumModal() {
+  document.getElementById("premiumModal").style.display = "flex";
+}
+
+function closePremiumModal() {
+  document.getElementById("premiumModal").style.display = "none";
+}
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 WILD - Emotional Intelligence in Leadership. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

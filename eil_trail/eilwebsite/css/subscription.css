@@ -1,0 +1,241 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6%;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #004aad;
+}
+
+.logo-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav-links .active {
+  color: #2076c1;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #2b4da2, #2076c1);
+  padding: 80px 10%;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+/* Section */
+.section {
+  padding: 60px 10%;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Simple Plans */
+.simple-plans {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.plan {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 30%;
+  text-align: center;
+}
+
+.btn {
+  background: #2076c1;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* EI Cards */
+.ei-cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.ei-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 30%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn-ei {
+  background: #444;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-box {
+  background: white;
+  width: 90%;
+  max-width: 420px;
+  padding: 25px 30px;
+  border-radius: 14px;
+  animation: slideUp 0.35s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.close-btn {
+  float: right;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.modal-subtitle {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Toggle Switch */
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.switch {
+  position: relative;
+  width: 45px;
+  height: 22px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background: #ccc;
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background: #2076c1;
+}
+
+input:checked + .slider:before {
+  transform: translateX(23px);
+}
+
+/* Modal price */
+.modal-price {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.modal-payment-btn {
+  display: block;
+  background: #2076c1;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+/* Footer */
+footer {
+  background:#004aad;
+  color:white;
+  text-align:center;
+  padding:22px 0;
+  margin-top:70px;
+}
+

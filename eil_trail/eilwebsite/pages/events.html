@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | WILD – Emotional Intelligence in Leadership</title>
+
+  <link rel="stylesheet" href="/eilwebsite/css/events.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6ad46.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-circle" style="background-image: url(/eilwebsite/images/logo.png);"></div>
+      <span>Emotional Intelligence</span>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+      <div class="dropdown">
+        <a href="events.html">Events <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">Seminars</a></li>
+          <li><a href="#">Leadership Talks</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a href="multimedia.html">Educational Multi-Media <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Podcasts</a></li>
+          <li><a href="#">Articles</a></li>
+        </ul>
+      </div>
+      <a href="subscription.html">Subscription</a>
+      <a href="#">Social Media</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our Events & Programs</h1>
+      <p>Grow your leadership capability through evidence-based emotional intelligence learning experiences.</p>
+      <a href="#workshops" class="hero-btn">Explore Events</a>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-bar">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="workshop">Workshops</button>
+      <button class="filter-btn" data-filter="seminar">Seminars</button>
+      <button class="filter-btn" data-filter="talk">Leadership Talks</button>
+    </div>
+  </section>
+
+  <!-- Events Grid -->
+  <section class="events-container" id="workshops">
+
+    <!-- Event Card 1 -->
+    <div class="event-card workshop">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80" alt="Workshop" />
+      <div class="event-details">
+        <h3>Building Emotional Resilience</h3>
+        <p class="date"><i class="fa-solid fa-calendar-days"></i> March 12, 2025</p>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Toronto, WILD Center</p>
+        <p class="desc">Strengthen your self-awareness, emotional regulation, and leadership presence through hands-on practice.</p>
+
+        <div class="actions">
+          <a href="#" class="btn-details">View Details</a>
+          <a href="#" class="btn-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event Card 2 -->
+    <div class="event-card seminar">
+      <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80" alt="Seminar" />
+      <div class="event-details">
+        <h3>Emotional Intelligence in Modern Leadership</h3>
+        <p class="date"><i class="fa-solid fa-calendar-days"></i> May 8, 2025</p>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> University of Waterloo</p>
+        <p class="desc">A research-driven seminar exploring how EI improves decision-making, collaboration, and organizational culture.</p>
+
+        <div class="actions">
+          <a href="#" class="btn-details">View Details</a>
+          <a href="#" class="btn-book">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event Card 3 -->
+    <div class="event-card talk">
+      <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1000&q=80" alt="Leadership Talk" />
+      <div class="event-details">
+        <h3>Leading with Emotional Intelligence</h3>
+        <p class="date"><i class="fa-solid fa-calendar-days"></i> July 10, 2025</p>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Online (Virtual)</p>
+        <p class="desc">A live keynote exploring empathy-based leadership, delivered by Dr. Sara Hashemi Nasab.</p>
+
+        <div class="actions">
+          <a href="#" class="btn-details">More Info</a>
+          <a href="#" class="btn-book">Join Talk</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 WILD – Emotional Intelligence in Leadership. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Filter Script -->
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.event-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          card.style.display =
+            filter === 'all' || card.classList.contains(filter)
+              ? 'block'
+              : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
