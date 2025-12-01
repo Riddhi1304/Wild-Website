@@ -1,0 +1,391 @@
+/* ================= GLOBAL STYLES ================= */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.8rem 4rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo styling */
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links a:hover,
+.nav-links a.active {
+  color: #c62828; /* Red */
+}
+
+/* Dropdown styling (if used later) */
+.dropdown {
+  position: relative;
+}
+
+/* Right side icons (profile & cart) */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  color: #1f2d3d;
+}
+
+/* Cart badge (red bubble with count) */
+.cart {
+  position: relative;
+}
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #ffebeb; /* soft pink background */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #b71c1c; /* dark red for title */
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #374151;
+}
+
+/* ================= CATEGORY FILTER BUTTONS ================= */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+}
+
+.btn {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  padding: 0.7rem 1.8rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn:hover {
+  border-color: #b71c1c;
+  color: #b71c1c;
+}
+
+/* Active button (highlighted) */
+.btn.active {
+  background-color: #b71c1c;
+  color: #fff;
+  border: none;
+}
+
+/* =================== PRODUCT SECTION =================== */
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 products per line */
+  gap: 4rem;
+  justify-content: center;
+  padding: 3rem 15rem;
+}
+
+
+/* Each product card */
+.product-card {
+  width: 320px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container */
+.product-img {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bestseller badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 1rem;
+}
+
+/* Product info text area */
+.product-info {
+  padding: 1.2rem 1.5rem;
+}
+
+.category {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.product-name {
+  color: #b71c1c;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+.desc {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Rating section */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #b71c1c;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.rating i {
+  color: #f94d4d; /* red stars */
+}
+
+.rating span {
+  color: #444;
+  font-size: 0.85rem;
+}
+
+/* Price and Cart button */
+.price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #b71c1c;
+  margin: 0;
+}
+
+.cart-btn {
+  background-color: #b71c1c;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #8a1313;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background-color: #fff;
+  padding: 80px 100px;
+  border-top: 1px solid #f0dede;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  color: #b22222;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Headings */
+.footer-column h4 {
+  color: #b22222;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Links */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #b22222;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #444;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #b22222;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer {
+    padding: 60px 40px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+}
+
+/* ===================== FOOTER BOTTOM ===================== */
+.footer-bottom {
+  border-top: 1px solid #e5e5e5;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #b22222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 40px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
