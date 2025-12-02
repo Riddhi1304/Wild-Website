@@ -1,171 +1,437 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Educational Multimedia | WILD – Emotional Intelligence</title>
-  <link rel="stylesheet" href="/eil_trail/eilwebsite/css/multimedia.css">
+
+  <!-- Fonts & Icons (no JS) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="stylesheet" href="/eil_trail/eilwebsite/css/multimedia.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2e0e6ad46.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- NAV -->
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="logo">
-      <div class="logo-circle" style="background-image: url(/eilwebsite/images/logo.png);"></div>
+      <div class="logo-circle" style="background-image: url('/eil_trail/eilwebsite/images/logo.png')"></div>
       <span>Emotional Intelligence</span>
     </div>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
 
-        <li class="dropdown">
-          <a href="events.html">Events</a>
-        </li>
+      <div class="dropdown">
+        <a href="#">Programs & Services <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Leadership Coaching</a></li>
+          <li><a href="#">Organizational Training</a></li>
+          <li><a href="#">EI Assessments</a></li>
+          <li><a href="#">Consulting</a></li>
+          <li><a href="#">Book an Appointment</a></li>
+        </ul>
+      </div>
 
-        <li class="dropdown">
-          <a href="multimedia.html" class="active">Educational Multimedia</a>
-        </li>
+      <div class="dropdown">
+        <a href="events.html">Events <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Upcoming Events</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">Seminars</a></li>
+          <li><a href="#">Leadership Talks</a></li>
+        </ul>
+      </div>
 
-        <li><a href="subscription.html">Subscription</a></li>
-        <li><a href="#">Social Media</a></li>
-      </ul>
+      <div class="dropdown">
+        <a href="multimedia.html">Research & Media <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Research Papers</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Podcasts</a></li>
+          <li><a href="#">Case Studies</a></li>
+        </ul>
+      </div>
+
+      <a href="subscription.html">Subscription</a>
+      <a href="#">Social Media</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
+    <div class="container">
       <h1>Educational Multimedia</h1>
-      <p>Explore videos, podcasts, and articles to enhance your leadership with emotional intelligence.</p>
+      <p>Explore videos, podcasts and publications — choose Free Access or Paid Version to jump to the right content.</p>
     </div>
   </section>
-<!-- Videos Section -->
-<section class="content-section">
-  <h2>Videos</h2>
-  <div class="content-grid">
 
-    <!-- Video 1 -->
-    <div class="video-card">
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/dlM4jqZXdnY" allowfullscreen></iframe>
-   
+  <!-- TOP SELECT -->
+  <div class="top-select container" role="region" aria-label="Choose Free or Paid" >
+    <a class="select-card" href="#free-section">
+      <div>
+        <h3 style="font-size: 1.3rem;">Free Access</h3>
+        <p style="font-size: 1.3rem;">Watch and read our free videos, podcasts & publications</p>
       </div>
-      <h3>Emotional Intelligence Basics</h3>
-    </div>
+    </a>
 
-    <!-- Video 2 -->
-    <!-- Premium Locked Video -->
-<div class="video-card premium-locked">
-  <div class="video-wrapper locked">
-    <img src="/eilwebsite/images/video-thumbnail-1.jpg" class="thumbnail" alt="Video Thumbnail">
-
-    <div class="lock-overlay">
-      <i class="fa-solid fa-lock"></i>
-      <p>Premium Content</p>
-      <button class="btn-subscribe" onclick="openPremiumModal()">Get Premium Access</button>
-    </div>
+    <a class="select-card" href="#paid-section" style="font-size: 1.8rem;">
+      <div>
+        <h3 style="font-size: 1.3rem;">Paid Version</h3>
+        <p style="font-size: 1.3rem;">Premium content available as single purchases — videos, podcasts & e-workbooks</p>
+      </div>
+    </a>
   </div>
-  <h3> <a href="https://www.youtube.com/@WildNaturalProductsAndEvents" target="_blank">Leadership & EI</a></h3>
-</div>
 
-    <!-- Video 3 -->
-    <div class="video-card">
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/2n7y9nZzXGk" allowfullscreen></iframe>
-        <div class="overlay">
-          <a href="https://www.youtube.com/@WildNaturalProductsAndEvents" target="_blank" class="btn-overlay">
-            <i class="fa-brands fa-youtube"></i> Watch on YouTube
-          </a>
+  <!-- MAIN -->
+  <main class="container">
+    <!-- FREE -->
+    <section id="free-section" aria-labelledby="free-heading">
+      <h2 id="free-heading" class="section-title" style="font-size: 3rem;">Free Access</h2>
+      <p class="section-intro" style="font-size: 1.8rem;">Everything in this section is available free of charge.</p>
+
+      <!-- Free Videos -->
+      <div style="margin-top:12px">
+        <h3 style="margin:0 0 10px">Videos</h3>
+        <div class="grid" role="list">
+          <article class="card" role="listitem">
+            <div class="thumb" aria-hidden="true">
+              <!-- sample embed thumbnail or iframe -->
+              <iframe src="https://www.youtube.com/embed/dlM4jqZXdnY" title="Emotional Intelligence Basics" allowfullscreen></iframe>
+            </div>
+            <h3>Emotional Intelligence Basics</h3>
+            <div class="meta">Intro · 12 min</div>
+            <div class="row">
+              <a class="btn btn-outline" href="https://www.youtube.com/watch?v=dlM4jqZXdnY" target="_blank" rel="noopener">Watch on YouTube</a>
+            </div>
+          </article>
+
+          <article class="card" role="listitem">
+            <div class="thumb">
+              <iframe src="https://www.youtube.com/embed/2n7y9nZzXGk" title="Managing Emotions in Teams" allowfullscreen></iframe>
+            </div>
+            <h3>Managing Emotions in Teams</h3>
+            <div class="meta">Practical tips · 18 min</div>
+            <div class="row">
+              <a class="btn btn-outline" href="https://www.youtube.com/watch?v=2n7y9nZzXGk" target="_blank" rel="noopener">Watch on YouTube</a>
+            </div>
+          </article>
         </div>
       </div>
-      <h3>Managing Emotions in Teams</h3>
-      <a href="subscription.html" class="link-subscribe">Get Premium Access</a>
-    </div>
 
-  </div>
-</section>
+      <!-- Free Podcasts -->
+      <div style="margin-top:26px">
+        <h3 style="margin:0 0 10px">Podcasts</h3>
+        <div class="grid">
+          <article class="card">
+            <div style="display:flex; gap:12px; align-items:center">
+              <div style="width:78px; height:78px; border-radius:10px; background:#e8f4ff; display:grid; place-items:center">
+                <span style="font-size:22px; color:var(--brand)">🎙️</span>
+              </div>
+              <div style="flex:1">
+                <h3 style="margin:0">Leadership & Emotions — Ep 1</h3>
+                <div class="meta">Hosted by WILD · 34 min</div>
+              </div>
+            </div>
+            <div class="row" style="margin-top:12px">
+              <a class="btn btn-outline" href="#" onclick="return false;">Play Episode</a>
+            </div>
+          </article>
 
-
-
-  <!-- Podcasts Section -->
-  <section class="content-section">
-    <div class="card video-cardp">
-        <iframe src="https://www.youtube.com/embed/2n7y9nZzXGk" allowfullscreen></iframe>
-      <h2>Podcasts <span class="coming-soon">(Coming Soon)</span></h2>
-      
-    <p class="coming-text">We are preparing engaging podcasts to help you grow your leadership with emotional intelligence. Stay tuned!</p>
-  </div>
-  </section>
-
-  <!-- Articles Section -->
-  <section class="content-section">
-    <h2>Publications</h2>
-    <div class="content-grid">
-      <div class="card">
-        <h3>5 Ways to Boost Emotional Intelligence</h3>
-        <p>Learn actionable strategies to strengthen your EI and lead effectively.</p>
-        <a href="#" class="btn-details">Read More</a>
+          <article class="card">
+            <h3>New Episodes Coming Soon</h3>
+            <div class="meta">We are producing more episodes — stay tuned</div>
+          </article>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Empathy in Leadership</h3>
-        <p>Understanding and practicing empathy can transform your team's performance.</p>
-        <a href="#" class="btn-details">Read More</a>
+      <!-- Free Publications -->
+      <div style="margin-top:26px">
+        <h3 style="margin:0 0 10px">Publications</h3>
+        <div class="grid">
+          <article class="card">
+            <h3>5 Ways to Boost Emotional Intelligence</h3>
+            <div class="meta">Article · 8 min read</div>
+            <p style="color:var(--muted); margin:8px 0 0">Actionable strategies to strengthen your EI and lead more effectively.</p>
+            <div class="row">
+              <a class="btn btn-outline" href="#" onclick="return false;">Read Article</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Self-Awareness Techniques (e-Workbook)</h3>
+            <div class="meta">Interactive exercises · Free</div>
+            <div class="row">
+              <a class="btn btn-outline" href="#" onclick="return false;">Download</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Empathy in Leadership — Short Guide</h3>
+            <div class="meta">PDF · 12 pages</div>
+            <div class="row">
+              <a class="btn btn-outline" href="#" onclick="return false;">Open Guide</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAID -->
+    <section id="paid-section" aria-labelledby="paid-heading">
+      <h2 id="paid-heading" class="section-title">Paid Version</h2>
+      <p class="section-intro">Premium items below can be purchased individually. Each item includes a direct Buy link plus its own CSS-only modal with purchase details.</p>
+
+      <!-- Paid Videos -->
+      <div style="margin-top:12px">
+        <h3 style="margin:0 0 10px">Videos (Paid)</h3>
+        <div class="grid">
+          <!-- Paid video 1 -->
+          <article class="card locked" id="item-vid-1" data-title="Leadership & EI — Deep Dive">
+            <div class="thumb"><img src="/eilwebsite/images/video-thumbnail-1.jpg" alt="Leadership & EI — Deep Dive"></div>
+            <h3>Leadership & EI — Deep Dive</h3>
+            <div class="meta">Masterclass · 45 min</div>
+            <div class="row">
+              <a class="buy-link" href="checkout.html" target="_blank" rel="noopener">Buy — $9.99</a>
+              <!-- open modal with :target -->
+              <a class="btn btn-primary" href="#modal-vid-101">View & Purchase</a>
+            </div>
+          </article>
+
+          <!-- Paid video 2 -->
+          <article class="card locked" id="item-vid-2" data-title="Advanced Emotion Regulation">
+            <div class="thumb"><img src="/eilwebsite/images/video-thumbnail-2.jpg" alt="Advanced Emotion Regulation"></div>
+            <h3>Advanced Emotion Regulation</h3>
+            <div class="meta">Techniques for leaders · 30 min</div>
+            <div class="row">
+              <a class="buy-link" href="checkout.html" target="_blank" rel="noopener">Buy — $6.49</a>
+              <a class="btn btn-primary" href="#modal-vid-102">View & Purchase</a>
+            </div>
+          </article>
+
+          <!-- Paid video 3 -->
+          <article class="card locked" id="item-vid-3" data-title="Emotional Agility Workshop">
+            <div class="thumb"><img src="/eilwebsite/images/video-thumbnail-3.jpg" alt="Emotional Agility Workshop"></div>
+            <h3>Emotional Agility Workshop</h3>
+            <div class="meta">Workshop recording · 60 min</div>
+            <div class="row">
+              <a class="buy-link" href="checkout.html" target="_blank" rel="noopener">Buy — $12.00</a>
+              <a class="btn btn-primary" href="#modal-vid-103">View & Purchase</a>
+            </div>
+          </article>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Self-Awareness Techniques</h3>
-        <p>Discover methods to increase self-awareness for better decision-making.</p>
-        <a href="#" class="btn-details">Read More</a>
+      <!-- Paid Podcasts -->
+      <div style="margin-top:26px">
+        <h3 style="margin:0 0 10px">Podcasts (Paid)</h3>
+        <div class="grid">
+          <article class="card locked" id="item-pod-1">
+            <div style="display:flex; gap:12px; align-items:center">
+              <div style="width:84px; height:84px; border-radius:10px; background:#fde68a; display:grid; place-items:center; font-size:28px">🎧</div>
+              <div style="flex:1">
+                <h3 style="margin:0">Mastering Empathy — Episode</h3>
+                <div class="meta">Exclusive episode · 28 min</div>
+              </div>
+            </div>
+            <div class="row" style="margin-top:12px">
+              <a class="buy-link" href="checkout.html" target="_blank" rel="noopener">Buy — $2.99</a>
+              <a class="btn btn-primary" href="#modal-pod-501">View & Purchase</a>
+            </div>
+          </article>
+
+          <article class="card locked" id="item-pod-2">
+            <div style="display:flex; gap:12px; align-items:center">
+              <div style="width:84px; height:84px; border-radius:10px; background:#fce7f3; display:grid; place-items:center; font-size:28px">🎙️</div>
+              <div style="flex:1">
+                <h3 style="margin:0">Leading with Empathy — Episode</h3>
+                <div class="meta">Exclusive interview · 34 min</div>
+              </div>
+            </div>
+            <div class="row" style="margin-top:12px">
+              <a class="buy-link" href="checkout.html" target="_blank" rel="noopener">Buy — $3.49</a>
+              <a class="btn btn-primary" href="#modal-pod-502">View & Purchase</a>
+            </div>
+          </article>
+
+          <article class="card locked" id="item-pod-3">
+            <div style="display:flex; gap:12px; align-items:center">
+              <div style="width:84px; height:84px; border-radius:10px; background:#e0f2fe; display:grid; place-items:center; font-size:28px">🎚️</div>
+              <div style="flex:1">
+                <h3 style="margin:0">Resilience Stories — Episode</h3>
+                <div class="meta">Narrative learning · 22 min</div>
+              </div>
+            </div>
+            <div class="row" style="margin-top:12px">
+              <a class="buy-link" href="checkout.html" target="_blank" rel="noopener">Buy — $2.49</a>
+              <a class="btn btn-primary" href="#modal-pod-503">View & Purchase</a>
+            </div>
+          </article>
+        </div>
       </div>
+
+      <!-- Paid Publications -->
+      <div style="margin-top:26px">
+        <h3 style="margin:0 0 10px">Publications (Paid)</h3>
+        <div class="grid">
+          <article class="card locked" id="item-pub-1">
+            <h3>EI Workbook — Advanced Exercises</h3>
+            <div class="meta">e-Workbook · downloadable PDF</div>
+            <div class="row">
+              <a class="buy-link" href="checkout.html" target="_blank" rel="noopener">Buy — $7.50</a>
+              <a class="btn btn-primary" href="#modal-pub-301">View & Purchase</a>
+            </div>
+          </article>
+
+          <article class="card locked" id="item-pub-2">
+            <h3>Leadership Reflection Journal</h3>
+            <div class="meta">Guided prompts · 40 pages</div>
+            <div class="row">
+              <a class="buy-link" href="checkout.html" target="_blank" rel="noopener">Buy — $4.00</a>
+              <a class="btn btn-primary" href="#modal-pub-302">View & Purchase</a>
+            </div>
+          </article>
+
+          <article class="card locked" id="item-pub-3">
+            <h3>Leadership Micro-Exercises — eBook</h3>
+            <div class="meta">Short practice drills · 28 pages</div>
+            <div class="row">
+              <a class="buy-link" href="checkout.html" target="_blank" rel="noopener">Buy — $5.99</a>
+              <a class="btn btn-primary" href="#modal-pub-303">View & Purchase</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <p style="color:var(--muted); margin-top:18px">Direct Buy links are provided for your backend/payment processor. The modals below are CSS-only and are safe to use by the backend person for visual purchase confirmations or to show additional information before initiating the server-side payment flow.</p>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:var(--brand); color:#fff; padding:24px 0;">
+    <div class="container" style="text-align:center">
+      <div style="font-weight:700">© 2025 WILD - Emotional Intelligence in Leadership</div>
+      <div style="opacity:0.9; margin-top:6px; font-size:0.95rem">All Rights Reserved.</div>
     </div>
-  </section>
-
-<!-- Premium Modal -->
-<div id="premiumModal" class="modal-overlay">
-  <div class="modal-box">
-    <span class="close-btn" onclick="closePremiumModal()">&times;</span>
-
-    <h2 class="modal-title">Premium Access Required</h2>
-    <p class="modal-subtitle">Unlock this exclusive video and all premium content.</p>
-
-    <div class="modal-plan-card">
-      <h3>Premium Plan</h3>
-      <p class="price">$19.99 / month</p>
-      <ul>
-        <li>✔ Unlimited Premium Videos</li>
-        <li>✔ Exclusive Articles</li>
-        <li>✔ Leadership Masterclasses</li>
-        <li>✔ Priority Support</li>
-      </ul>
-    </div>
-
-    <a class="modal-payment-btn" href="subscription.html">View Plans</a>
-  </div>
-</div>
-
-
-<script>
-function openPremiumModal() {
-  document.getElementById("premiumModal").style.display = "flex";
-}
-
-function closePremiumModal() {
-  document.getElementById("premiumModal").style.display = "none";
-}
-</script>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 WILD - Emotional Intelligence in Leadership. All Rights Reserved.</p>
   </footer>
+
+  <!-- CSS-ONLY MODALS (one per paid item) -->
+  <!-- Videos -->
+  <div id="modal-vid-101" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-vid-101-title">
+      <h3 id="modal-vid-101-title">Leadership &amp; EI — Deep Dive</h3>
+      <p class="meta">Masterclass · 45 min</p>
+      <p style="margin-top:12px; color:var(--muted)">This masterclass dives into advanced emotional intelligence strategies for leaders. One-time purchase grants access to the full recording and downloadable resources.</p>
+      <div class="modal-actions">
+        <a class="close-link" href="#paid-section">Close</a>
+        <a class="buy-link" href="https://your-pay-link.example/vid-101" target="_blank" rel="noopener">Proceed to Payment — $9.99</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-vid-102" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-vid-102-title">
+      <h3 id="modal-vid-102-title">Advanced Emotion Regulation</h3>
+      <p class="meta">Techniques for leaders · 30 min</p>
+      <p style="margin-top:12px; color:var(--muted)">Learn practical emotion regulation techniques for use in high-pressure leadership situations.</p>
+      <div class="modal-actions">
+        <a class="close-link" href="#paid-section">Close</a>
+        <a class="buy-link" href="https://your-pay-link.example/vid-102" target="_blank" rel="noopener">Proceed to Payment — $6.49</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-vid-103" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-vid-103-title">
+      <h3 id="modal-vid-103-title">Emotional Agility Workshop</h3>
+      <p class="meta">Workshop recording · 60 min</p>
+      <p style="margin-top:12px; color:var(--muted)">A recorded workshop with exercises and facilitator notes. Ideal for teams and leaders seeking practical skill building.</p>
+      <div class="modal-actions">
+        <a class="close-link" href="#paid-section">Close</a>
+        <a class="buy-link" href="https://your-pay-link.example/vid-103" target="_blank" rel="noopener">Proceed to Payment — $12.00</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Podcasts -->
+  <div id="modal-pod-501" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-pod-501-title">
+      <h3 id="modal-pod-501-title">Mastering Empathy — Episode</h3>
+      <p class="meta">Exclusive episode · 28 min</p>
+      <p style="margin-top:12px; color:var(--muted)">Listen to an in-depth conversation and receive a downloadable summary with reflection prompts.</p>
+      <div class="modal-actions">
+        <a class="close-link" href="#paid-section">Close</a>
+        <a class="buy-link" href="https://your-pay-link.example/pod-501" target="_blank" rel="noopener">Proceed to Payment — $2.99</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-pod-502" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-pod-502-title">
+      <h3 id="modal-pod-502-title">Leading with Empathy — Episode</h3>
+      <p class="meta">Interview · 34 min</p>
+      <p style="margin-top:12px; color:var(--muted)">An exclusive interview with a leader who transformed team dynamics through empathy-based practices.</p>
+      <div class="modal-actions">
+        <a class="close-link" href="#paid-section">Close</a>
+        <a class="buy-link" href="https://your-pay-link.example/pod-502" target="_blank" rel="noopener">Proceed to Payment — $3.49</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-pod-503" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-pod-503-title">
+      <h3 id="modal-pod-503-title">Resilience Stories — Episode</h3>
+      <p class="meta">Narrative learning · 22 min</p>
+      <p style="margin-top:12px; color:var(--muted)">Personal stories of resilience and short, actionable takeaways for leaders.</p>
+      <div class="modal-actions">
+        <a class="close-link" href="#paid-section">Close</a>
+        <a class="buy-link" href="https://your-pay-link.example/pod-503" target="_blank" rel="noopener">Proceed to Payment — $2.49</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Publications -->
+  <div id="modal-pub-301" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-pub-301-title">
+      <h3 id="modal-pub-301-title">EI Workbook — Advanced Exercises</h3>
+      <p class="meta">e-Workbook · PDF</p>
+      <p style="margin-top:12px; color:var(--muted)">Downloadable workbook with step-by-step exercises and facilitator notes.</p>
+      <div class="modal-actions">
+        <a class="close-link" href="#paid-section">Close</a>
+        <a class="buy-link" href="https://your-pay-link.example/pub-301" target="_blank" rel="noopener">Proceed to Payment — $7.50</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-pub-302" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-pub-302-title">
+      <h3 id="modal-pub-302-title">Leadership Reflection Journal</h3>
+      <p class="meta">Guided prompts · 40 pages</p>
+      <p style="margin-top:12px; color:var(--muted)">Daily and weekly prompts to build reflective leadership habits.</p>
+      <div class="modal-actions">
+        <a class="close-link" href="#paid-section">Close</a>
+        <a class="buy-link" href="https://your-pay-link.example/pub-302" target="_blank" rel="noopener">Proceed to Payment — $4.00</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-pub-303" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-pub-303-title">
+      <h3 id="modal-pub-303-title">Leadership Micro-Exercises — eBook</h3>
+      <p class="meta">Short practice drills · 28 pages</p>
+      <p style="margin-top:12px; color:var(--muted)">Quick exercises you can apply daily to build stronger emotional skills.</p>
+      <div class="modal-actions">
+        <a class="close-link" href="#paid-section">Close</a>
+        <a class="buy-link" href="https://your-pay-link.example/pub-303" target="_blank" rel="noopener">Proceed to Payment — $5.99</a>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
