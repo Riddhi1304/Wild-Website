@@ -54,9 +54,8 @@ body{
   display: flex;
   align-items: center;
   gap: 2rem;
-  font-size: 1.2rem; /* Larger font size */
-
-
+  font-weight: 700;
+  font-size: 1.3rem; /* Larger font size */
 }
 
 .nav-links a {
@@ -76,7 +75,6 @@ body{
   border-radius: 8px;
   font-weight: 800;
 }
-
 /* Dropdown */
 .dropdown {
   position: relative;
@@ -88,7 +86,7 @@ body{
   list-style: none;
   padding: 0.5rem 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
+  display: none;
   top: 100%;
   left: 0;
 }
@@ -109,19 +107,12 @@ body{
   color: #004aad;
 }
 
-.cart-icon{
-  font-weight:700;
-}
-
-.cart-count{
-  background:red;
-  color:#fff;
-  border-radius:50%;
-  padding:0 6px;
-  font-size:0.8rem;
-  position:absolute;
-  top:-8px;
-  right:-12px;
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #004aad;
+  cursor: pointer;
 }
 
 /* MAIN */
