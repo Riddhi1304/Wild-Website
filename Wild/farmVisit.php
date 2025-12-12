@@ -1,59 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wild Skincare - Farm Visit</title>
+  <meta charset="UTF-8">
+  <title>Farm Visit | Wild Skincare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="./CSS/farmVisit.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./CSS/farmvisit.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- =================== HEADER / NAVBAR =================== -->
-  <?php include 'navbar.php'; ?>
- <!-- <header class="navbar">
-    <div class="logo">
-      <img src="./img/LOGO - Wild Natural Products and Events.PNG" alt="" style="width: 100px; height: auto;" />
-    </div>
 
-    <nav class="nav-links">
-      <a href="skinIndex.html"><strong>Home</strong></a>
-      <div class="dropdown">
-        <a href="./Products.html"><strong>Products</strong></a>
-      </div>
-      <a href="./about.html"><strong>About</strong></a>
-      <a href="./events.html"><strong>Events</strong></a>
-      <a href="farmVisit.html" class="active"><strong>Farm Visit</strong></a>
-      <a href="#"><strong>Contact</strong></a>
-    </nav>
-  </header> -->
+<?php include 'navbar.php'; ?>
 
-  <!-- =================== HERO SECTION =================== -->
-  <section class="hero">
-    <h1>Visit Our Farm</h1>
-    <p>
-      Experience where Wild Skincare products begin. Tour our organic farm, meet our botanicals, 
-      and see sustainable beauty in action.
-    </p>
-  </section>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <h1>Visit Our Farm</h1>
+  <p>Experience where Wild Skincare products begin. Tour our organic farm, meet our botanicals, and see sustainable beauty in action.</p>
+</section>
 
-  <!-- =================== IMAGE SECTION =================== -->
-  <section class="farm-image">
-    <img src="./img/Farm.png" alt="Wild Skincare Farm" />
-  </section>
+<!-- ============== HERO IMAGE ============== -->
+<section class="farm-image">
+  <img src="./img/Farm.png" alt="Farm View">
+</section>
 
-  <section class="experience-section">
+<!-- ============== EXPERIENCE CARDS ============== -->
+<section class="experience-section">
   <h2 class="section-title">What You'll Experience</h2>
   <div class="underline"></div>
 
   <div class="experience-container">
+
     <div class="experience-card">
       <div class="icon"><i class="fa-solid fa-leaf"></i></div>
       <h3>Organic Gardens</h3>
@@ -63,82 +44,65 @@
     <div class="experience-card">
       <div class="icon"><i class="fa-solid fa-sun"></i></div>
       <h3>Greenhouse Tour</h3>
-      <p>Visit our state-of-the-art greenhouse where we cultivate rare and exotic plants year-round.</p>
+      <p>Visit our state-of-the-art greenhouse where rare plants are cultivated year-round.</p>
     </div>
 
     <div class="experience-card">
-      <div class="icon"><i class="fa-solid fa-droplet"></i></div>
+      <div class="icon"><i class="fa-solid fa-flask"></i></div>
       <h3>Extraction Lab</h3>
-      <p>See how we carefully extract essential oils and active ingredients from our botanicals.</p>
+      <p>See how we carefully extract essential oils and actives from farm-grown botanicals.</p>
     </div>
 
     <div class="experience-card">
       <div class="icon"><i class="fa-solid fa-heart"></i></div>
       <h3>Product Workshop</h3>
-      <p>Hands-on experience creating your own natural skincare product to take home.</p>
+      <p>Hands-on experience making your own natural skincare sample to take home.</p>
     </div>
+
   </div>
 </section>
 
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-<!-- ================= OUR SUSTAINABLE FARM SECTION ================= -->
+<!-- ================= FARM DETAILS ================= -->
 <section class="farm-section">
-  <!-- Section Heading -->
   <h2>Our Sustainable Farm</h2>
   <div class="underline"></div>
 
-  <!-- ====== ROW 1: Image Left, Text Right ====== -->
+  <!-- Row 1 -->
   <div class="farm-row">
-    <!-- Image -->
     <div class="farm-image">
-      <img src="./img/Botanic (2).png" alt="Botanical Species">
+      <img src="./img/botanical(1).jpg">
     </div>
-
-    <!-- Text -->
     <div class="farm-text">
       <h3>50+ Botanical Species</h3>
       <p>Our farm cultivates over 50 different plant species used in Wild Skincare products.</p>
     </div>
   </div>
 
-  <!-- ====== ROW 2: Text Left, Image Right ====== -->
+  <!-- Row 2 -->
   <div class="farm-row reverse">
-    <!-- Text -->
+    <div class="farm-image">
+      <img src="./img/botanical(2).jpg">
+    </div>
     <div class="farm-text">
       <h3>Zero Waste Practices</h3>
-      <p>We practice sustainable farming with composting, rainwater harvesting, and natural pest control.</p>
-    </div>
-
-    <!-- Image -->
-    <div class="farm-image">
-      <img src="./img/Botanic (1).png" alt="Zero Waste Practices">
+      <p>We practice sustainable farming with composting, rainwater harvesting and natural pest control.</p>
     </div>
   </div>
 
-  <!-- ====== ROW 3: Image Left, Text Right ====== -->
+  <!-- Row 3 -->
   <div class="farm-row">
-    <!-- Image (placeholder shown in screenshot) -->
     <div class="farm-image placeholder">
       <i class="fa-regular fa-image"></i>
     </div>
-
-    <!-- Text -->
     <div class="farm-text">
       <h3>Educational Programs</h3>
-      <p>Learn about sustainable agriculture, plant science, and natural ingredient sourcing.</p>
+      <p>Learn about sustainable agriculture, plant science and ingredient sourcing.</p>
     </div>
   </div>
+
 </section>
 
-<!-- Font Awesome for the placeholder icon -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  
-
-  <!-- ================= FOOTER SECTION ================= -->
+<!-- ================= FOOTER SECTION ================= -->
 <footer class="footer">
   <div class="footer-container">
 

@@ -403,6 +403,149 @@ body {
   }
 }
 
+/* ===================== MISSION & VISION SECTION ===================== */
+.mv-section {
+  padding: 80px 15rem;
+  background-color: #fffbfb;      /* very soft pink */
+}
+
+.mv-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.mv-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.mv-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  color: #b71c1c;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.mv-header h2 {
+  font-size: 2.3rem;
+  color: #b71c1c;
+  margin-bottom: 10px;
+}
+
+.mv-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Layout for Mission + Vision */
+.mv-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Shared block style */
+.mv-block {
+  background: transparent;         /* no card box */
+  padding: 10px 0;
+  border-left: 4px solid #ffd1d1;  /* soft accent line */
+  padding-left: 18px;
+}
+
+.mv-block h3 {
+  font-size: 1.3rem;
+  color: #b71c1c;
+  margin-bottom: 8px;
+}
+
+.mv-block p {
+  font-size: 0.97rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.mv-block ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.mv-block ul li {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+/* Slightly stronger accent on right block (Vision) */
+.mv-vision {
+  border-left-color: #b71c1c;
+}
+
+/* Bottom one-line statement */
+.mv-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #f0dede;
+  padding-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.mv-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #b71c1c;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.mv-bottom p {
+  margin: 0;
+  font-size: 0.96rem;
+  color: #333;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 1200px) {
+  .mv-section {
+    padding: 70px 6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .mv-section {
+    padding: 60px 3rem;
+  }
+
+  .mv-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .mv-section {
+    padding: 50px 1.5rem;
+  }
+
+  .mv-header h2 {
+    font-size: 2rem;
+  }
+}
+
+
 /* ===================== FOOTER BOTTOM ===================== */
 .footer-bottom {
   border-top: 1px solid #e5e5e5;

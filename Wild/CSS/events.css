@@ -572,6 +572,7 @@ body {
     gap: 15px;
   }
 }
+
 /* ================= POPUP OVERLAY ================= */
 .popup-overlay {
   position: fixed;
@@ -676,5 +677,216 @@ body {
 @media (max-width: 500px) {
   .popup {
     width: 90%;
+  }
+}
+
+/* =================================================================== */
+/* ============== NEW: CONSULTATION / APPOINTMENT SECTION ============ */
+/* =================================================================== */
+
+.consultation-section {
+  background-color: #ffefef;          /* Same soft pink as hero for consistency */
+  padding: 60px 200px 80px;
+}
+
+.consultation-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Left column (text) */
+.consultation-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.consultation-info h2 {
+  color: #c62828;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.consultation-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.consultation-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.consultation-info ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.consultation-info ul i {
+  color: #c62828;
+}
+
+.consultation-note {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Right column (form card) */
+.consultation-form-card {
+  flex: 1;
+  min-width: 320px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 25px 25px 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(198, 40, 40, 0.1);
+}
+
+.consultation-form-card h3 {
+  color: #c62828;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Form layout */
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.form-row.two-columns .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #c62828;
+  box-shadow: 0 0 4px rgba(198, 40, 40, 0.25);
+}
+
+.help-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* Primary button for this section */
+.primary-btn {
+  background-color: #c62828;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background-color: #8b0000;
+  transform: translateY(-1px);
+}
+
+/* Form success message */
+.form-message {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #2e7d32;
+}
+
+/* Appointment date + time row */
+.appointment-row {
+  align-items: flex-start;
+}
+
+/* Time slots container */
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 40px;
+}
+
+.time-help-text {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Individual time slot button */
+.time-slot-btn {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #c62828;
+  background-color: #fff;
+  color: #c62828;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.time-slot-btn:hover {
+  background-color: #ffe5e5;
+}
+
+.time-slot-btn.active {
+  background-color: #c62828;
+  color: #fff;
+}
+
+/* Responsive for consultation section */
+@media (max-width: 992px) {
+  .consultation-section {
+    padding: 50px 50px;
+  }
+
+  .consultation-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .consultation-section {
+    padding: 40px 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
   }
 }

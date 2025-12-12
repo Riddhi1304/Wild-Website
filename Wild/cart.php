@@ -88,5 +88,8 @@ if (isset($_GET['delete'])) {
 
 </div>
 
+<a href="checkout.php" class="checkout-btn">Proceed to Checkout</a>
+
+
 </body>
 </html>
